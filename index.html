@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/911ffb4435.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header">
+       <div class="container">
+           <nav>
+            <img src="Assets/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+           </nav>
+           <div class="header-text">
+            <p>MERN STACK DEVELOPER</p>
+            <h1>Hi, I'M <span>Abhilash Mamidi</span> <br>From Hyderabad, India.</h1>
+           </div>
+       </div>
+    </div>
+    <!-----------------------------------------about------------------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./Assets/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>As an enthusiastic and driven individual, I am Abhilash Mamidi, a Mechanical Engineering graduate from Hyderabad with a strong passion for software development. Eager to blend my engineering background with my newfound skills in Java Full Stack and MERN Stack development, I am committed to contributing innovative solutions to today's technological challenges. <br>
+                        With a solid foundation in both JavaScript and Java programming languages, acquired through rigorous study and hands-on projects, I bring a unique perspective to software development. My journey into the software field reflects my dedication to continuous learning and adaptation to new technologies. <br>                        
+               
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('projects')">Projects</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>MERN Stack Developer</span> <br>Building full-stack web applications</li>
+                            <li><span>Front End Developer</span> <br>Designing user interfaces</li>
+                            <li><span>Full Stack Java Developer<br></span> Building user-friendly applications</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="projects">
+                        <ul>
+                            <li><span>QR-Generator</span> <br>Generate QR codes instantly.</li>
+                            <li><span>Portfolio Website</span><br> HTML, CSS, and JavaScript skills with a personalized portfolio website.</li>
+                            <li><span>Weather App<br></span><br>React-based weather app simplifying data display for easy access to current conditions and forecasts."</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>B-tech</span><h4>2019-2022</h4> <br>Mechanical Engineering</li>
+                            <li><span>Diploma</span><h4>2015-2018</h4><br>Mechanical Engineering</li>
+                            <li><span>10<sup>th</sup>Schooling</span><h4>2015</h4><br>Pragna High School</li>
+                        </ul>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+   <!-----------------------------------------about------------------------------------------->
+   <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+           <div>
+            <i class="fa-solid fa-code"></i>
+              <h2>Website Development</h2>
+              <p class="para">"Crafting dynamic and engaging websites for seamless user experiences." <br>
+                "Transforming ideas into interactive digital experiences through innovative web development."  <br>
+              </p>
+              <a href="#">Learn more</a>
+           </div>
+           <div>
+            <i class="fa-brands fa-app-store-ios"></i>
+            <h2>App Development</h2>
+            <p class="para">"Crafting intuitive and engaging mobile applications tailored to meet diverse user needs and preferences."</p>
+            <a href="#">Learn More</a>
+           </div>
+           <div>
+            <i class="fa-solid fa-rotate"></i>
+            <h2>REST API</h2>
+            <p class="para">"REST APIs serve as the cornerstone for communication and data exchange between different software systems, enabling efficient interaction and interoperability."</p>
+            <a href="#">Learn More</a>
+           </div>
+        </div>
+    </div>
+   </div>
+<!-----------------------------------------Portfolio------------------------------------------->
+   <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="./Assets/work-1.png" >
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you to the talented people aroung the world. Download it from paly Store /App store.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./Assets/work-2.png" >
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>The app connects you to the talented people aroung the world. Download it from paly Store /App store.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./Assets/work-3.png" >
+                <div class="layer">
+                    <h3>Online Shapping App</h3>
+                    <p>The app connects you to the talented people aroung the world. Download it from paly Store /App store.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+   </div>
+<!-----------------------------------------Contact------------------------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>abhilashmamidi22@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>7680855499</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="./Assets/my-cv.pdf" download class="btn btn-2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright © Abhilash <i class="fa-solid fa-heart"></i> by Shiva</p>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body> 
+</html>
